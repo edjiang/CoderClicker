@@ -1,0 +1,47 @@
+<head>
+  <title>Coder Clicker</title>
+  <meta name="description" content="A really bad version of cookie clicker, but multiplayer. ">
+</head>
+
+<body>
+  <div class="container">
+    <div id="header">
+    </div>
+    <h1>Coder Clicker</h1>
+    <p>Created by <a href="http://twitter.com/EdwardStarcraft">@EdwardStarcraft</a> as a webapp demo for a <a href="http://CodeDay.org/">CodeDay</a> workshop! Fork me on <a href="http://github.com/edjiang/CoderClicker/">GitHub!</p>
+    <p>Tweet about it with the <a href="https://twitter.com/search?q=%23CoderClicker">#CoderClicker</a> hashtag! Confused? Scroll down to see the buttons.</p>
+
+    {{> leaderboard}}
+  </div>
+</body>
+
+<template name="leaderboard">
+  <table class="leaderboard table table-striped">
+    <thead>
+      <th>Username</th><th>Money</th><th>Dollars per Second</th>
+    </thead>
+
+    {{#each players}}
+      {{> player}}
+    {{/each}}
+  </table>
+
+  <h2>{{#if currentUser}}You ({{user.username}}) have ${{formatCurrency user.money}} and make ${{formatCurrency user.rate}} per second!{{else}}Sign in to play!{{/if}}</h2>
+    {{loginButtons}}<p>
+
+  <div class="details">
+    <input type="button" class="code btn span4" value="Write line of code ($25)" />
+    {{#each items}}
+    <input type="button" class="buy btn span4" id="{{cost}}" value="Buy {{name}} (${{formatCurrency cost}})" />
+    {{/each}}
+  </div>
+</template>
+
+<template name="player">
+  <tr class="player">
+    <td class="name">{{username}}</td>
+    <td class="money">${{formatCurrency money}}</td>
+    <td class="rate">{{formatCurrency rate}} dps</td>
+  </tr>
+</template>
+
