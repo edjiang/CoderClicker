@@ -17,7 +17,19 @@ Install Meteor using the [Meteor Docs](http://docs.meteor.com/#quickstart), if y
     git clone https://github.com/edjiang/CoderClicker.git
     cd CoderClicker
     meteor
+    
+Visit http://localhost:3000/ to play!
 
 ##Deploy Online
 
     meteor deploy [YOURPROJECTNAME].meteor.com
+    
+Replace [YOURPROJECTNAME] with something suitable. 
+    
+Visit http://[YOURPROJECTNAME].meteor.com/ to play! It will be shared with all of your friends!
+
+#Adding Items
+
+Open up CoderClicker.js: 
+
+After `{name: "Monkey", cost: 500}`, add: `, {name: "[ITEMNAME]", cost: [COST]}`. There is no current way to change the DPS of an item. If you want, you should figure out how to do it! =]
