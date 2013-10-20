@@ -26,7 +26,7 @@ Visit http://localhost:3000/ to play!
     
 Replace [YOURPROJECTNAME] with something suitable. 
     
-Visit http://[YOURPROJECTNAME].meteor.com/ to play! It will be shared with all of your friends!
+Visit http://[YOURPROJECTNAME].meteor.com/ to play, and share with all of your friends!
 
 #Adding Items
 
