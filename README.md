@@ -4,7 +4,7 @@ By [Edward Jiang](http://twitter.com/EdwardStarcraft)
 
 CoderClicker is a game inspired by Cookie Clicker. It's a multiplayer clicking game built with Meteor.js to use as a workshop for [CodeDay](http://codeday.org/)!
 
-I'll have a link to a tutorial on how to build this from scratch soon! 
+Here's a [tutorial on how to build this](http://blog.studentrnd.org/post/66270708458/tutorial-creating-coder-clicker-a-cookie-clicker). 
 
 #Trying out CoderClicker
 
