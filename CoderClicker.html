@@ -21,9 +21,11 @@
       <th>Username</th><th>Money</th><th>Dollars per Second</th>
     </thead>
 
-    {{#each players}}
-      {{> player}}
-    {{/each}}
+    <tbody>
+      {{#each players}}
+        {{> player}}
+      {{/each}}
+    </tbody>
   </table>
 
   <h2>{{#if currentUser}}You ({{user.username}}) have ${{formatCurrency user.money}} and make ${{formatCurrency user.rate}} per second!{{else}}Sign in to play!{{/if}}</h2>
